@@ -1,0 +1,8 @@
+<ul type= "disc" ng-repeat = "emp in empolyees"> 
+        <li>{{ emp.firstName }}</li>
+        <ul>
+            <li>{{ emp.lastName }}</li>
+            <li>{{ emp.gender | gender}}</li>
+        </ul>
+        <li><img ng-src="{{emp.flag}}" /></li>
+</ul>

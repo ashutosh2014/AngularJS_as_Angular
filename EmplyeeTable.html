@@ -1,0 +1,15 @@
+<table>
+    <tr>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Gender</td>
+        <td>Flag</td>
+    </tr>
+    <tr ng-repeat="emp in empolyees">
+        <td>{{ emp.firstName }}</td>
+        <td>{{ emp.lastName }}</td>
+        <td>{{ emp.gender | gender}}</td>
+        <td><img ng-src="{{emp.flag}}" /></td>
+        <td><input type="submit" ng-click="change(emp)  " value="change" /></td>
+    </tr>
+</table>

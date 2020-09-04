@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" /> 
+    <!-- <link rel="stylesheet" href="~/css/site.css" /> --> -->
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/scripts.js"></script>
+
+</head>
+<body>
+    <div class="container" ng-controller="myController">
+        Employee View
+        <select ng-model="empView" >
+            <option value="EmplyeeTable.html"> Employee Table</option>
+            <option value="EmployeeList.html"> Employee List</option>
+        </select> 
+        <div ng-include = "empView">
+
+        </div>
+    </div>
+    <script src="scripts/jquery-3.5.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+   </body>
+</html>
